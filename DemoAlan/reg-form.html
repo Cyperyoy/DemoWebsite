@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="mm">
+<head>
+    <link rel="stylesheet" href="style.css"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags</title>
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .transbox {
+            margin: 10px;
+            background-color:#22333d80;
+
+        }
+        .background {
+            background-image:url(assets/alanwalker.jpg);color: gold;
+            background-position: center;
+            background-size: cover;
+        
+        }
+        .unicode{
+			font-family:Myanmar3,Yunghkio,'Masterpiece Uni Sans';
+		}
+        .footer {
+    text-align: center;
+    color: gold;
+    font-weight: bolder;
+}
+
+    </style>
+    
+    
+    <link rel="stylesheet" href="alanstyle.css">
+
+</head>
+<body class="background">                    
+    <h1 class="alanhead"><img src="assets/alanwalkericon.jpg" width="45px" height="45px" alt="AlanWalker logo" style="vertical-align:bottom;" >
+        <a href="index.html" style="text-decoration: none;" target=""><strong>&nbsp;Alan Walker&nbsp;<i class="fab fa-napster fa-1x"></i></strong></a></img></h1>
+
+    <div style="text-align: right;">
+    <button>
+        <span>
+            <a href="index.html" target="" style="text-decoration: none; color: black;">
+                <img src="assets/back.svg" width="15" height="15" style="vertical-align: bottom;" 
+                >&nbsp;Back</img>
+            </a>
+        </span>
+        </button>
+    </div>
+
+    <div class="transbox">
+         <fieldset>
+        
+        <legend><h3 class="unicode">Register Form</h3></legend>        
+        <form action="index.html" method="POST">
+            <span id="infoagree" onclick="myFunction()" ><button>Click Here. I Agree To Fill Correct Information !</button></span>
+            <br><br>
+          <div> <label for="fname" class="unicode">Name</label><br>
+            <input type="text" name="fname" placeholder="First Name" autofocus id="fname" required>
+            <input type="text" name="lname" placeholder="Last Name" id="">
+            </div>  
+            <br>
+           <div>
+            <label for="email">Your Email</label><br>
+            <input type="email" name="email" id="email" required>
+           </div>
+           <br>
+        <div>
+            <label for="tel">Telephone</label><br>
+            <input type="tel" name="tele" id="tel" style="font-style:italic;" placeholder="Enter Without 0" pattern="[0-9]{10}">
+            <small>e.g 9450123456</small><br><br>
+            <label for="tel">Your Old MPT Number :</label><br>
+            <input type="tel" name="tele" id="tel2" style="font-style: italic;" placeholder="Enter Without 0" pattern="[0-9]{8}">
+            <small>e.g 95123456</small>
+
+        </div><br>
+         
+        <div>
+            <label for="password">Password :</label><br>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="cpassword" id="" placeholder="Confirm Password" >
+
+        </div><br>
+        <div>
+            <label for="address">Address :</label><br>
+            <textarea name="Address" id="address" cols="40" rows="2" placeholder=""></textarea>
+        </div><br>
+     
+        <div>
+            <label for="dob">Date Of Birth :</label><br>
+            <input type="date" name="dob" id="dob">
+
+        </div><br>
+
+        <div>
+            <label for="age">Age :</label><br>
+            <input type="number" name="" id="age" min="18" placeholder="Must Over 18 years">
+
+        </div><br>
+      
+        <div>
+            <label for="radio"> Gender :</label><br>
+            <label for="male"> Male :</label>
+            <input type="radio" name="male" value="" id="male"><br>
+            <label for="female"> Female :</label>
+            <input type="radio" name="male" value="" id="female"><br>
+            <label for="other"> Other :</label>
+            <input type="radio" name="male" value="" id="other">
+           
+
+        </div><br>
+        <div>
+            <label for="profile">Your Photo :</label><br>
+            <input type="file" name="Photo" id="profile"><br>
+        </div><br>
+        <div>
+            <input type="checkbox" name="agreement" id="agree" required>
+            <label for="agree">Please tip checkbox if your information correct.</label>
+
+        <div>
+            <input type="text" placeholder="Type : Yes" required pattern="[Yes]{3}"><br><br>
+            <input type="submit" value="&hookrightarrow;Submit "> &nbsp;&nbsp;
+            <button>Register button &hearts;</button> &nbsp;&nbsp;
+            <input type="reset" value="Reset &UpArrow;">
+        </div>
+        <div class="unicode" style="text-align: justify; color: gold; font-size: 18px;">   
+            <p><b><i>1. &nbsp;We certify that the above information is correct.<br>
+                        2.&nbsp;&nbsp;It is your responsibility to enter the correct information.<br>
+                        3. &nbsp;Over 18 years old</i></b></p></div><br>
+    
+
+
+    
+     
+        <script>
+            
+            function myFunction() {
+                 
+                 document.getElementById("infoagree").innerHTML = " Ok You Agreed. Please Fill Information. ";
+            }
+                </script>
+        </div>
+        </fieldset>
+        </form></div><br>
+
+        <footer class="footer">
+            <p style="display: inline; text-transform: uppercase; "><i class="far fa-copyright"></i> Copyright by mr.Tt2 
+    
+                | Design: <a href="https://thantun.ezyro.com" rel="sponsored" target="popup" 
+                    style="text-decoration: none; color: #cd00ff; font-weight: bolder;">Than Tun&nbsp; <i class="far fa-registered">
+                    </i></a></p>
+                </footer>
+
+</body>
+</html>
